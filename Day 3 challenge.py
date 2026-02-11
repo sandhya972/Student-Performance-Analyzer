@@ -2,6 +2,7 @@ n=int(input("Enter the number of students:"))
 marks=[]
 count_valid=0
 count_failed=0
+name=="sandhya"
 for i in range(n):
     m=int(input("Enter marks:"))
     marks.append(m)
@@ -9,8 +10,8 @@ for m in marks:
     if m>=90 and m<=100:
         print(m ,"->Excellent")
         count_valid = count_valid + 1
-    elif m>=75 and m<=89:
-        print(m,"->Very Good")
+    elif m>=75 and m<=89 and name=="sandhya":
+        print(m,"->Very Good(personalized)")
         count_valid = count_valid + 1
     elif m>=60 and m<=74:
         print(m,"->Good")
@@ -25,4 +26,5 @@ for m in marks:
     else:
         print(m,"->Invalid")
 print("Total valid Students:",count_valid)
+
 print("Total failed Students:",count_failed)
